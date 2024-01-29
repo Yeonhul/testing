@@ -1,0 +1,48 @@
+{
+  "name": "office_next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "local": "cross-env PORT=3000 NODE_ENV=development CY_ENV=local nodemon server/index.js --watch server",
+    "dev": "cross-env PORT=3000 NODE_ENV=development CY_ENV=dev nodemon server/index.js --watch server",
+    "start_office_dev": "HOST=0.0.0.0 PORT=3000 cross-env NODE_ENV=production CY_ENV=dev pm2 start --name next_office server/index.js",
+    "restart_office_dev": "pm2 delete npd3_dev && HOST=0.0.0.0 PORT=3000 cross-env NODE_ENV=production CY_ENV=dev pm2 start --name next_office server/index.js",
+    "reload_npd3_dev": "pm2 reload next_office",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --fix --ext .js,.cjs --ignore-path .gitignore ."
+  },
+  "browserslist": [
+    "last 2 version",
+    "IE >= 10"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.14.17",
+    "axios": "^1.6.1",
+    "bcrypt": "^5.1.1",
+    "consola": "^3.2.3",
+    "console-stamp": "^3.1.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-basic-auth": "^1.2.1",
+    "express-session": "^1.17.3",
+    "moment-timezone": "^0.5.43",
+    "mysql2": "^3.6.3",
+    "next": "14.0.2",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "sequelize": "^6.35.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.2",
+    "eslint-plugin-prettier": "^5.0.1",
+    "nodemon": "^3.0.1"
+  }
+}

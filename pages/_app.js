@@ -1,5 +1,5 @@
 import * as mui from '@/app/utils/MaterialUI'
-import Layout from '../components/layout'
+import Layout from '@component/layout.js'
 
 export default function MyApp({ Component, pageProps, router }) {
 	const { route } = router

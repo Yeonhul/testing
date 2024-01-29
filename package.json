@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "local": "cross-env PORT=3000 NODE_ENV=development CY_ENV=local nodemon server/index.js --watch server",
+    "local": "cross-env PORT=3131 NODE_ENV=development CY_ENV=local nodemon server/index.js --watch server",
     "dev": "cross-env PORT=3000 NODE_ENV=development CY_ENV=dev nodemon server/index.js --watch server",
     "start_office_dev": "HOST=0.0.0.0 PORT=3000 cross-env NODE_ENV=production CY_ENV=dev pm2 start --name next_office server/index.js",
     "restart_office_dev": "pm2 delete npd3_dev && HOST=0.0.0.0 PORT=3000 cross-env NODE_ENV=production CY_ENV=dev pm2 start --name next_office server/index.js",

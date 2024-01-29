@@ -1,5 +1,5 @@
-import LayoutLogin from '@/components/layout/login'
-import LayoutDefault from '@/components/layout/default'
+import LayoutLogin from '@component/layout/login'
+import LayoutDefault from '@component/layout/default'
 const Index = ({ type, children }) => {
 	const getLayout = () => {
 		if (type === 'login') {
@@ -7,6 +7,8 @@ const Index = ({ type, children }) => {
 		} else {
 			return <LayoutDefault>{children}</LayoutDefault>
 		}
+
+		// return children
 	}
 	return getLayout()
 }

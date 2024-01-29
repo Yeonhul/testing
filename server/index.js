@@ -65,7 +65,7 @@ NEXT.prepare().then(() => {
 	// ------------------------------- router & middleware  ------------------------------------------
 	// -----------------------------------------------------------------------------------------------
 
-	const PORT = process.env.PORT || 3000
+	const PORT = process.env.PORT || 3131
 
 	app.listen(PORT, err => {
 		if (err) {

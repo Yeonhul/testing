@@ -5,7 +5,7 @@ const Index = props => {
 	const mui = props.mui
 	return (
 		<>
-			index
+			index test
 			<mui.Button variant="contained">123</mui.Button>
 		</>
 	)

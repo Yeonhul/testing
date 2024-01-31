@@ -1,7 +1,7 @@
 import * as MaterialUI from '@mui/material'
 import * as Icons from '@mui/icons-material'
 
-export const { Button, AppBar, TextField } = MaterialUI
+export const { Button, AppBar, TextField, Alert } = MaterialUI
 
 export const {
 	AddCircleOutline // 예시로 AddCircleOutline 아이콘을 추가
